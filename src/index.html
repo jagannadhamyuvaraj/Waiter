@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RoboServe | AI Food Delivery</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+  <!-- Navigation Header -->
+  <header class="header">
+    <div class="navbar">
+      <div class="navbar-left">
+        <img src="images/logo.svg" alt="RoboServe Logo" class="logo">
+        <span class="brand-name">Waiter</span>
+      </div>
+      <div class="navbar-center">
+        <div class="search-bar">
+          <i class="fas fa-search"></i>
+          <input type="text" placeholder="Search for cuisines or restaurants...">
+        </div>
+      </div>
+      <div class="navbar-right">
+        <a href="#" class="nav-link"><i class="fas fa-heart"></i> Favorites</a>
+        <a href="#" class="nav-link"><i class="fas fa-shopping-cart"></i> Cart</a>
+        <a href="#" class="nav-link signin-btn">Sign In</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Banner -->
+  <section class="hero-banner">
+    <div class="banner-content">
+      <h1>Order Food from Your Favorite Restaurants</h1>
+      <p>Fast delivery • Multiple cuisines • 24/7 Available</p>
+      <div class="location-selector">
+        <i class="fas fa-map-marker-alt"></i>
+        <input type="text" placeholder="Enter delivery location">
+        <button class="search-btn">Search</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cuisine Filter Section -->
+  <section class="cuisine-filter">
+    <div class="container">
+      <h2>Explore Cuisines</h2>
+      <div class="cuisine-scroll">
+        <div class="cuisine-card" data-cuisine="indian">
+          <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?w=200&h=200&fit=crop"
+            alt="Indian Cuisine">
+          <p>Indian</p>
+        </div>
+        <div class="cuisine-card" data-cuisine="chinese">
+          <img src="https://images.unsplash.com/photo-1555521760-6158efba4c01?w=200&h=200&fit=crop"
+            alt="Chinese Cuisine">
+          <p>Chinese</p>
+        </div>
+        <div class="cuisine-card" data-cuisine="italian">
+          <img src="https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=200&h=200&fit=crop"
+            alt="Italian Cuisine">
+          <p>Italian</p>
+        </div>
+        <div class="cuisine-card" data-cuisine="mexican">
+          <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=200&h=200&fit=crop"
+            alt="Mexican Cuisine">
+          <p>Mexican</p>
+        </div>
+        <div class="cuisine-card" data-cuisine="thai">
+          <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=200&h=200&fit=crop" alt="Thai Cuisine">
+          <p>Thai</p>
+        </div>
+        <div class="cuisine-card" data-cuisine="japanese">
+          <img src="https://images.unsplash.com/photo-1579584425555-c3ce17fd4351?w=200&h=200&fit=crop"
+            alt="Japanese Cuisine">
+          <p>Japanese</p>
+        </div>
+        <div class="cuisine-card" data-cuisine="american">
+          <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=200&h=200&fit=crop"
+            alt="American Cuisine">
+          <p>American</p>
+        </div>
+        <div class="cuisine-card" data-cuisine="mediterranean">
+          <img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=200&h=200&fit=crop" alt="Mediterranean">
+          <p>Mediterranean</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu Display Section -->
+  <section class="menu-section">
+    <div class="container">
+      <h2 id="cuisine-title">Popular Dishes</h2>
+      <div class="menu-grid" id="menuGrid">
+        <!-- Menu items will be dynamically loaded here -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Robot Assistant Widget (Floating Button) -->
+  <div class="robot-widget">
+    <button class="robot-button" id="robotBtn">
+      <img src="images/logo.svg" alt="Ask Waiter" class="robot-icon">
+      <span class="robot-label">Ask Waiter</span>
+    </button>
+  </div>
+
+  <!-- Robot Chat Modal -->
+  <div class="robot-modal" id="robotModal">
+    <div class="robot-chat-container">
+      <div class="robot-header">
+        <div class="robot-title">
+          <img src="images/logo.svg" alt="Robot" class="chat-robot-icon">
+          <span>RoboAssistant - AI Waiter</span>
+        </div>
+        <button class="close-btn" id="closeRobot">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="chat-messages" id="chatMessages">
+        <div class="message bot-message">
+          <div class="message-content">
+            <p>👋 Hi! I'm your AI waiter. Tell me about your preferences, and I'll suggest the best dishes for you!</p>
+            <p style="font-size: 12px; margin-top: 8px; opacity: 0.8;">💡 Try saying things like: "I'm hungry for spicy
+              food" or "Show me vegetarian options"</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="chat-suggestions" id="chatSuggestions">
+        <button class="suggestion-btn" onclick="sendSuggestion('I love spicy food')">Spicy Food 🌶️</button>
+        <button class="suggestion-btn" onclick="sendSuggestion('Show me vegetarian options')">Vegetarian 🥬</button>
+        <button class="suggestion-btn" onclick="sendSuggestion('I want something healthy')">Healthy 🥗</button>
+        <button class="suggestion-btn" onclick="sendSuggestion('Quick meals under $10')">Budget Meals 💰</button>
+      </div>
+
+      <div class="chat-input-area">
+        <input type="text" id="chatInput" placeholder="Tell me your food preference...">
+        <button class="send-btn" id="sendBtn">
+          <i class="fas fa-paper-plane"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Overlay for modal -->
+  <div class="modal-overlay" id="modalOverlay"></div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>RoboServe</h4>
+        <p>Delivering food with robot precision and AI intelligence</p>
+      </div>
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Follow Us</h4>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 RoboServe. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+
+</html>

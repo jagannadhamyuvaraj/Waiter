@@ -1,0 +1,38 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Circle -->
+  <circle cx="100" cy="100" r="95" fill="#ff5200" opacity="0.1" stroke="#ff5200" stroke-width="2"/>
+  
+  <!-- Robot Head -->
+  <rect x="60" y="50" width="80" height="90" rx="15" fill="#ff5200" stroke="#1c1c1c" stroke-width="2"/>
+  
+  <!-- Robot Eyes -->
+  <rect x="75" y="65" width="15" height="15" rx="3" fill="white" stroke="#1c1c1c" stroke-width="1.5"/>
+  <rect x="110" y="65" width="15" height="15" rx="3" fill="white" stroke="#1c1c1c" stroke-width="1.5"/>
+  
+  <!-- Robot Pupils -->
+  <circle cx="82.5" cy="72.5" r="4" fill="#1c1c1c"/>
+  <circle cx="117.5" cy="72.5" r="4" fill="#1c1c1c"/>
+  
+  <!-- Robot Mouth -->
+  <rect x="75" y="95" width="50" height="3" rx="1.5" fill="#1c1c1c"/>
+  
+  <!-- Antenna -->
+  <line x1="100" y1="50" x2="100" y2="25" stroke="#ff5200" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="100" cy="20" r="6" fill="#ff5200"/>
+  
+  <!-- Fork and Knife -->
+  <g transform="translate(130, 100)">
+    <!-- Fork -->
+    <line x1="0" y1="0" x2="0" y2="25" stroke="#ff5200" stroke-width="2" stroke-linecap="round"/>
+    <line x1="-8" y1="25" x2="-8" y2="30" stroke="#ff5200" stroke-width="1.5"/>
+    <line x1="0" y1="28" x2="0" y2="30" stroke="#ff5200" stroke-width="1.5"/>
+    <line x1="8" y1="25" x2="8" y2="30" stroke="#ff5200" stroke-width="1.5"/>
+  </g>
+  
+  <!-- Plate -->
+  <circle cx="100" cy="155" r="35" fill="none" stroke="#ff5200" stroke-width="2"/>
+  <ellipse cx="100" cy="155" rx="35" ry="12" fill="none" stroke="#ff5200" stroke-width="2" opacity="0.5"/>
+  
+  <!-- Shine effect -->
+  <circle cx="115" cy="145" r="4" fill="white" opacity="0.6"/>
+</svg>
