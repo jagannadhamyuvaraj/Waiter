@@ -306,41 +306,6 @@ const menuDatabase = {
   ]
 };
 
-// AI Responses Database
-const aiResponses = {
-  spicy: {
-    responses: ["Great! I recommend our spiciest dishes!", "You like heat! 🌶️ Let me show you some amazing spicy options."],
-    dishes: ["Kung Pao Chicken", "Green Curry", "Butter Chicken", "Tacos Al Pastor", "Buffalo Wings"]
-  },
-  vegetarian: {
-    responses: ["Excellent choice! We have wonderful vegetarian options.", "Perfect! Let me share our best vegetarian dishes."],
-    dishes: ["Paneer Tikka", "Fried Rice", "Margherita Pizza", "Nachos", "Greek Salad", "Falafel Wrap"]
-  },
-  healthy: {
-    responses: ["Health-conscious! Great choice. 🥗", "Perfect! Let me show you our nutritious options."],
-    dishes: ["Paneer Tikka", "Sushi Rolls", "Tom Yum Soup", "Greek Salad", "Tzatziki Bowl"]
-  },
-  budget: {
-    responses: ["Got it! Let me show you the best value options.", "Budget-friendly choices coming up! 💰"],
-    dishes: ["Samosa", "Fried Rice", "Dumplings", "Spring Rolls", "Nachos"]
-  },
-  quick: {
-    responses: ["In a hurry? No problem! Quick options for you.", "Fast and delicious! Here are quick meals."],
-    dishes: ["Fried Rice", "Tacos", "Burrito", "Mac & Cheese", "Spring Rolls"]
-  },
-  comfort: {
-    responses: ["Time for some comfort food! 😋", "Comfort food lovers, this is for you!"],
-    dishes: ["Butter Chicken", "Biryani", "Spaghetti Bolognese", "Burrito", "Mac & Cheese", "Ramen"]
-  },
-  default: {
-    responses: [
-      "Interesting choice! Let me suggest something delicious for you.",
-      "Got it! Based on your preference, here are some great options.",
-      "Perfect! I have some amazing dishes that match your taste."
-    ]
-  }
-};
-
 let currentCuisine = 'indian';
 let cart = [];
 let conversationHistory = [];
