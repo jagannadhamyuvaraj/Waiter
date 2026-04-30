@@ -22,6 +22,10 @@ A modern, responsive food delivery website with an intelligent AI waiter robot a
 - Created a Knowledge base on amazon Bedrock with custom knowledge source by selecting a foundational model(Amazon Titan) for embeddings and data vectors store in S3 buckets for better results.
 
 
+  <img width="760" height="527" alt="image" src="https://github.com/user-attachments/assets/51aa2bdf-7855-40ec-8248-1594c93a64ea" />
+
+
+
 
 
 ### AI Robot Assistant
