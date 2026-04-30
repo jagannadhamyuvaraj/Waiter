@@ -17,35 +17,12 @@ A modern, responsive food delivery website with an intelligent AI waiter robot a
 - JavaScript for interactivity and AI chatbot
 
 
+# 2. Amazon Bedrock
+
+- Created a Knowledge base on amazon Bedrock with custom knowledge source by selecting a foundational model(Amazon Titan) for embeddings and data vectors store in S3 buckets for better results.
 
 
 
-
-## Key Sections
-
-### Navigation Bar
-- **Logo & Brand Name** (RoboServe)
-- **Search Bar** - Search by cuisine or restaurant
-- **Quick Links** - Favorites, Cart, Sign In
-
-### Hero Banner
-- Eye-catching orange gradient background
-- Location-based delivery selector
-- Search functionality
-
-### Cuisine Filter
-- 8 different cuisine categories with images
-- Horizontal scrolling carousel
-- Click to view cuisine-specific menu
-
-### Menu Display
-- Responsive grid layout
-- Food cards with:
-  - High-quality food images
-  - Dish name and description
-  - Rating (4.5-4.9 stars)
-  - Price
-  - "Add to Cart" button
 
 ### AI Robot Assistant
 - **Floating Widget** - Chat button in bottom-right corner
@@ -71,21 +48,7 @@ The RoboAssistant understands customer preferences and recommends dishes intelli
 
 Just click the "Ask Robot" button and describe what you're craving!
 
-## Browser Compatibility
 
-✅ Chrome/Chromium (Latest)
-✅ Firefox (Latest)
-✅ Safari (Latest)
-✅ Edge (Latest)
-✅ Mobile browsers
-
-## Performance Features
-
-- Lazy loading for images
-- Optimized CSS animations
-- Responsive grid layout
-- Smooth scrolling behavior
-- Efficient JavaScript
 
 ## Quick Start
 
@@ -103,46 +66,9 @@ Replace `src/images/logo.svg` with your logo file.
 
 ### Update Colors
 Edit CSS variables in `style.css`:
-```css
-:root {
-  --primary-color: #ff5200;      /* Orange */
-  --secondary-color: #1c1c1c;    /* Dark */
-}
-```
 
-### Add More Dishes
-Edit `menuDatabase` in `main.js`:
-```javascript
-dishes: [
-  {
-    id: 1,
-    name: "Your Dish",
-    desc: "Description",
-    price: 10.99,
-    rating: 4.7,
-    image: "image-url",
-    tags: ["tag1", "tag2"]
-  }
-]
-```
 
-## Technology Stack
-
-- **HTML5** - Semantic markup
-- **CSS3** - Modern styling with animations
-- **JavaScript (ES6+)** - Interactive features
-- **Font Awesome** - Icons
-- **Unsplash Images** - High-quality food photos
-
-## File Descriptions
-
-### index.html
-Complete semantic HTML with responsive layout
-
-### style.css
-Modern CSS with variables, animations, responsive design
-
-### main.js
+js
 Menu database, AI chatbot logic, event handling
 
 ### logo.svg
