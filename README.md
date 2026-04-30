@@ -1,49 +1,24 @@
-# RoboServe - AI-Powered Food Delivery Website
+# waiter - AI-Powered Food Delivery Website
 
 A modern, responsive food delivery website with an intelligent AI waiter robot assistant that helps customers discover and order food from multiple cuisines.
 
-## Features
 
-✨ **Modern Design** - Swiggy-inspired professional UI
-🤖 **AI Robot Assistant** - Intelligent food recommendations based on user preferences
-🍽️ **8 Cuisines** - Indian, Chinese, Italian, Mexican, Thai, Japanese, American, Mediterranean
-🔍 **Smart Search** - Filter by preferences (spicy, vegetarian, healthy, budget, etc.)
-💳 **Shopping Cart** - Add items to cart directly
-📱 **Responsive** - Works perfectly on desktop, tablet, and mobile devices
-⚡ **Interactive** - Smooth animations and transitions
-🌙 **Modern UI** - Professional color scheme and typography
 
-## Project Structure
+# Architecture
 
-```
-Waiter/
-├── src/
-│   ├── index.html          # Main HTML file
-│   ├── style.css           # Modern CSS styling
-│   ├── main.js             # Interactive JavaScript
-│   └── images/
-│       └── logo.svg        # RoboServe logo
-└── README.md               # This file
-```
 
-## Getting Started
+<img width="831" height="946" alt="waiter drawio" src="https://github.com/user-attachments/assets/b9ed56cc-c525-49c6-99ec-a65aec6784fb" />
 
-### 1. Basic Setup (Already Done ✓)
+
+### 1. Basic Setup
 - HTML structure with navigation, hero section, and menu display
 - CSS styling with responsive design
 - JavaScript for interactivity and AI chatbot
-- SVG logo included
 
-### 2. Running the Website
 
-Simply double-click `index.html` to open in your browser, or:
 
-```bash
-# Using Python 3
-python -m http.server 8000
 
-# Then visit: http://localhost:8000/src/
-```
+
 
 ## Key Sections
 
