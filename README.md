@@ -22,65 +22,63 @@ A modern, responsive food delivery website with an intelligent AI waiter robot a
 - Created a Knowledge base on amazon Bedrock with custom knowledge source by selecting a foundational model(Amazon Titan) for embeddings and data vectors store in S3 buckets for better results.
 
 
-  <img width="760" height="527" alt="image" src="https://github.com/user-attachments/assets/51aa2bdf-7855-40ec-8248-1594c93a64ea" />
+ <img width="2840" height="1420" alt="image" src="https://github.com/user-attachments/assets/6bf97385-9a05-4ac7-afce-f0b1a5f61893" />
 
 
 
 
 
-### AI Robot Assistant
-- **Floating Widget** - Chat button in bottom-right corner
-- **Smart Responses** - Understands user preferences
-- **Recommendation Keywords**:
-  - 🌶️ "spicy" → Kung Pao, Butter Chicken, etc.
-  - 🥬 "vegetarian" → Paneer Tikka, Risotto, etc.
-  - 🥗 "healthy" → Sushi, Tom Yum, Greek Salad, etc.
-  - 💰 "budget" → Samosa, Spring Rolls, etc.
-  - ⚡ "quick" → Fried Rice, Tacos, etc.
-  - 😋 "comfort" → Burrito, Mac & Cheese, Ramen, etc.
+ <img width="2050" height="1310" alt="image" src="https://github.com/user-attachments/assets/fbf69f65-7670-4b49-8b7f-4c2720e80091" />
 
-## AI Robot Features
-
-The RoboAssistant understands customer preferences and recommends dishes intelligently:
-
-- **Spicy Food** - Kung Pao Chicken, Green Curry, Buffalo Wings
-- **Vegetarian** - Paneer Tikka, Risotto, Margherita Pizza
-- **Healthy Options** - Sushi, Tom Yum, Greek Salad
-- **Budget Meals** - Samosa, Dumplings, Nachos
-- **Quick Service** - Fried Rice, Tacos, Mac & Cheese
-- **Comfort Food** - Biryani, Burger, Ramen
-
-Just click the "Ask Robot" button and describe what you're craving!
+ 
 
 
 
-## Quick Start
 
-1. Open `src/index.html` in a web browser
-2. Browse cuisines by clicking cuisine cards
-3. View menu items for each cuisine
-4. Click "Ask Robot" to get personalized recommendations
-5. Add items to cart
-6. Use quick suggestion buttons for common preferences
-
-## Customization Guide
-
-### Change Logo
-Replace `src/images/logo.svg` with your logo file.
-
-### Update Colors
-Edit CSS variables in `style.css`:
+### serverless
+- **Aws Lambda** - Implementing serverless architecture through event driven approach without managing servers
 
 
-js
-Menu database, AI chatbot logic, event handling
 
-### logo.svg
-Professional scalable robot waiter logo
+<img width="2856" height="1102" alt="image" src="https://github.com/user-attachments/assets/48392872-c179-44cd-aa9d-6e702967feb3" />
 
----
 
-**Version:** 1.0.0
-**Last Updated:** 2024
 
-Enjoy your modern food delivery website! 🚀
+
+## Api Gateway
+
+- ** Aws Api Gateway** - Configure API gateway as first point of contact which invokes the lambda function and lambda process the request send bedrock model
+
+- 
+
+<img width="2096" height="1258" alt="image" src="https://github.com/user-attachments/assets/6b8114a5-4a5c-41d3-9856-e6e9059bf72e" 
+
+
+  
+
+### serverless
+- **Aws Lambda** - Implementing serverless architecture through event driven approach without managing servers
+
+
+<img width="2856" height="1102" alt="image" src="https://github.com/user-attachments/assets/48392872-c179-44cd-aa9d-6e702967feb3" />
+
+
+
+
+
+### CDN
+ - **Aws cloudfront** - Created a cloudfront distribution for global access with minimum latency
+
+
+
+
+<img width="2458" height="1150" alt="image" src="https://github.com/user-attachments/assets/c82c430b-a038-45ec-a17b-61d5c59f42f4" />
+
+   
+
+### Response from waiter
+- Bedrock model fetches the most relevant items based on users taste through embeddings
+
+
+
+<img width="2824" height="1534" alt="image" src="https://github.com/user-attachments/assets/8a4928a8-0b95-4197-85a0-3577298e9bb3" />
