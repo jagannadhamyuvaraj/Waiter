@@ -51,7 +51,7 @@ A modern, responsive food delivery website with an intelligent AI waiter robot a
 
 - 
 
-<img width="2096" height="1258" alt="image" src="https://github.com/user-attachments/assets/6b8114a5-4a5c-41d3-9856-e6e9059bf72e" 
+<img width="2096" height="1258" alt="image" src="https://github.com/user-attachments/assets/6b8114a5-4a5c-41d3-9856-e6e9059bf72e" />
 
 
   
