@@ -7,7 +7,8 @@ A modern, responsive food delivery website with an intelligent AI waiter robot a
 # Architecture
 
 
-<img width="861" height="936" alt="waiter architecture drawio" src="https://github.com/user-attachments/assets/b311c242-b5e4-4767-8ffe-78ecb33e64ed" />
+<img width="861" height="627" alt="waiter architecture drawio" src="https://github.com/user-attachments/assets/ec26840d-9d63-4595-9c2a-f6a7745dc30d" />
+
 
 
 ### 1. Basic Setup
